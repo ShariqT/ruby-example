@@ -1,10 +1,11 @@
-name: Run tests
+name: Publish Gem
 
 on:
   release:
     types: [published]
+
 jobs:
-  ruby_tests:
+  publish_gem:
     runs-on: ubuntu-latest
     strategy:
       matrix:
@@ -15,8 +16,5 @@ jobs:
       uses: ruby/setup-ruby@v1
       with:
         ruby-version: ${{ matrix.ruby-version }}
-    - name: Run Tests
-      env:
-        API_KEY: ${{ secrets.API_KEY }}
-        JRUBY_OPT: --2.0
-      run: bundle exec rake test
+    - name: Install Dependencies
+      run: bundle install
