@@ -1,3 +1,3 @@
 module Lob
-  VERSION = "44.4"
+  VERSION = "44333.4"
 end
