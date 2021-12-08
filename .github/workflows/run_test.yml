@@ -14,8 +14,6 @@ jobs:
       uses: ruby/setup-ruby@v1
       with:
         ruby-version: ${{ matrix.ruby-version }}
-    - name: Install Dependencies
-      run: bundle install
     - name: Run Tests
       env:
         API_KEY: ${{ secrets.API_KEY }}
