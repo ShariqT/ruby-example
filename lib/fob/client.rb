@@ -1,5 +1,5 @@
 
-module Lob
+module Fob
   class Client
 
     attr_reader :config

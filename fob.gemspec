@@ -1,11 +1,11 @@
 # coding: utf-8
 $:.unshift(File.join(File.dirname(__FILE__), 'lib'))
 
-require "lob/version"
+require "fob/version"
 
 Gem::Specification.new do |spec|
-  spec.name          = "lob"
-  spec.version       = Lob::VERSION
+  spec.name          = "mytest"
+  spec.version       = Fob::VERSION
   spec.authors       = ["tst"]
   spec.email         = ["ts@sts.com"]
   spec.description   = %q{test}
